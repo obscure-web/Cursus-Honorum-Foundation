@@ -1,0 +1,454 @@
+*{
+  box-sizing: border-box;
+}
+
+body {
+  padding-top: 15px;
+}
+
+.logo{
+  height: 50px;
+}
+
+.title {
+  color: blue;
+}
+
+.title-image {
+  display: inline;
+}
+
+.title-text {
+  position: relative;
+  /* right: 20px; */
+  right: 5%;
+  color: blue;
+  font-size: 16px;
+}
+
+.title-gold {
+  color: gold;
+}
+
+.hyphen::after {
+  content: ' - ';
+  white-space: pre;
+}
+
+.hyphen::before {
+  content: '    ';
+}
+
+.hyphen-form::after {
+  content: ' - ';
+  vertical-align: middle;
+  position: relative;
+  bottom: 10px;
+}
+
+.dog {
+  /* background-image: url("./images/dog.jpg");
+  background-size: cover;
+  height: 100px;
+  background-clip: content-box; */
+  height: 100px;
+  width: 100%;
+
+}
+
+.blue-background {
+  background-color: blue;
+  padding-top: 20px;
+}
+
+.gold-background {
+  background-color: gold;
+}
+
+.gold-background:first-child {
+  padding-top: 10px;
+}
+
+/* .
+
+.red {
+  background-color: red;
+  height: 100px;
+} */
+
+#bootstrap-overrides a { /* 100+1=101 priority score, yay! */
+  padding: 0;
+}
+
+@media(max-width: 335.98px) {
+  .title-text {
+    bottom: 13px;
+    text-align: center;
+    right: 10%;
+  }
+}
+
+@media (min-width: 390px) {
+  .gold-background:last-child {
+    padding-top: 10px;
+  }
+}
+
+@media (min-width: 411px) {
+  .title-text {
+    font-size: 19px;
+
+  }
+}
+
+@media (min-width: 420px) {
+  .title-text {
+    right: 3%;
+  }
+}
+
+@media (min-width: 450px) {
+  .title-text {
+    left: 1%;
+  }
+  .dog {
+    height: 125px;
+  }
+  .blue-background {
+    padding-top: 30px;
+  }
+
+  .gold-background:first-child {
+    padding-top: 30px;
+  }
+  .gold-background:last-child {
+    padding-top: 20px;
+  }
+}
+
+@media (min-width: 501px) {
+  .gold-background:last-child {
+    padding-top: 30px;
+  }
+}
+
+@media (min-width: 555px) {
+  .blue-background {
+    padding-top: 40px;
+  }
+}
+
+/* Small (sm) devices (landscape phones, 576px and up) */
+@media(min-width: 768px) {
+  .logo {
+    height: 100px;
+  }
+  .title-text {
+    font-size: 25px;
+  }
+  .dog {
+    height: 200px;
+  }
+
+  .blue-background {
+    padding-top: 80px;
+  }
+
+  .gold-background:first-child {
+    padding-top: 80px;
+  }
+  .gold-background:last-child {
+    padding-top: 70px;
+  }
+}
+
+@media (min-width: 992px) {
+  body{
+    padding-top: 0px;
+  }
+  .logo{
+    height: 150px;
+  }
+  .title-text {
+    font-size: 48px;
+    left: -5%;
+    right: 0;
+
+  }
+  ul {
+    font-size: 25px;
+  }
+  .hyphen-form::after {
+    content: '- ';
+    vertical-align: middle;
+    position: relative;
+    bottom: 5px;
+    white-space: pre;
+  }
+  .paypal {
+    vertical-align: -4px;
+  }
+
+  main {
+    font-size: 25px;
+  }
+
+  .dog {
+    height: 300px;
+  }
+
+  .blue-background {
+    background-color: blue;
+    padding-top: 125px;
+  }
+
+  .gold-background:last-child {
+    background-color: gold;
+    padding-top: 100px;
+  }
+
+  .gold-background:first-child {
+    padding-top: 125px;
+  }
+}
+
+/* hr {
+  border-top: 2px solid #b4b4b4;
+  width: 95%;
+  margin-top: .3rem;
+  margin-bottom: 1rem;
+}
+
+main {
+  padding: 0px; */
+  /* background: url(./images/eiffel.jpg) left top no-repeat, url(./images/landscape.jpeg) right top no-repeat,
+   url(./images/nyc.jpg) left bottom no-repeat, url(./images/sistine.jpg) right bottom no-repeat; */
+   /* background: url(./images/eiffel.jpg) left top no-repeat, url(./images/landscape.jpeg) right top no-repeat; */
+  /* background-size: 50px, 130px, auto; */
+   /* background:  url(./images/eiffel.jpg); */
+   /* background-size: 50%, 100%; */
+
+  /* padding: 15px; */
+  /* background: url(./images/newbackground.jpg);
+  background-size: contain; */
+
+  /* padding: 0;
+}
+
+.logo { */
+  /* height: 100px;
+}
+
+.content {
+  color: white;
+  font-family: Raleway;
+  font-weight:900;
+  text-shadow: 0px 0px 3px #000;
+}
+
+.col-12.cursus {
+  margin-bottom: 30px;
+}
+
+.main-text {
+  box-shadow: 0px 0px 50px 25px #333333;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  color: #222;
+}
+
+.donate {
+  background-color: orange;
+}
+
+.navbar {
+  padding: .8rem;
+}
+
+.navbar-nav li {
+  padding-right: 20px;
+}
+
+.nav-link {
+  font-size: 1.1em !important;
+}
+
+.display-2 {
+  font: bold 24px/45px Helvetica, Sans-Serif;
+  letter-spacing: -1px; */
+  /* background: rgb(0, 0, 0); /* fallback color */
+  /* background: rgba(0, 0, 0, 0.7);
+  padding: 10px;
+}
+
+
+
+.btn-primary {
+  background-color: #6648b1;
+  border: 1px solid #563d7c;
+}
+.btn-primary:hover {
+  background-color: #563d7c;
+  border: 1px solid #563d7c;
+}
+
+
+#mailing-address {
+  text-decoration: underline;
+}
+
+.email {
+  margin-bottom: 25px;
+}
+
+#vCard {
+  border: 5px solid #ddd;
+  border-radius: 4px;
+  height: auto;
+  width: 60px;
+}
+
+#vCard:hover {
+  box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
+
+.jumbotron {
+  padding: 1rem;
+  border-radius: 0;
+}
+
+.padding {
+  padding-bottom: 2rem;
+} */
+
+/* .welcome {
+  width: 75%;
+  margin: 0 auto;
+  padding-top: 2rem;
+}
+
+.welcome-general {
+  width: 75%;
+  margin: 0 auto;
+  padding-top: 2rem;
+}
+
+.welcome hr {
+  border-top: 2px solid #b4b4b4;
+  width: 95%;
+  margin-top: .3rem;
+  margin-bottom: 1rem;
+}
+
+.welcome-general hr {
+  border-top: 2px solid #b4b4b4;
+  width: 97%;
+  margin-top: .3rem;
+  margin-bottom: 1rem;
+}
+
+footer {
+  background-color: #3f3f3f;
+  color: #d5d5d5;
+  padding-top: 2rem;
+}
+
+hr.light {
+  border-top: 1px solid #d5d5d5;
+  width: 75%;
+  margin-top: .8rem;
+  margin-bottom: 1rem;
+}
+
+hr.light-100 {
+  border-top: 1px solid #d5d5d5;
+  width: 100%;
+  margin-top: .8rem;
+  margin-bottom: 1rem;
+}
+
+footer a {
+  color: #d5d5d5;
+} */
+
+
+/*---Media Queries --*/
+/* @media (max-width: 360px) {
+  .foundation {
+    display: inline-block;
+    position: relative;
+    right: 10%;
+  }
+}
+
+@media (max-width: 375px) {
+  .foundation {
+    display: inline-block;
+    position: relative;
+    right: 8%;
+  }
+} */
+
+/*---Firefox Bug Fix --*/
+.carousel-item {
+  transition: -webkit-transform 0.5s ease;
+  transition: transform 0.5s ease;
+  transition: transform 0.5s ease, -webkit-transform 0.5s ease;
+  -webkit-backface-visibility: visible;
+  backface-visibility: visible;
+}
+/*--- Fixed Background Image --*/
+figure {
+  position: relative;
+  width: 100%;
+  height: 60%;
+  margin: 0!important;
+}
+.fixed-wrap {
+  clip: rect(0, auto, auto, 0);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+#fixed {
+  background-image: url('../img/mac.png');
+  position: fixed;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center center;
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
+  will-change: transform;
+}
+/*--- Bootstrap Padding Fix --*/
+[class*="col-"] {
+    padding: 1rem;
+}
+
+
+
+/*
+Extra small (xs) devices (portrait phones, less than 576px)
+No media query since this is the default in Bootstrap
+
+Small (sm) devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+Medium (md) devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+Large (lg) devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+Extra (xl) large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+*/
