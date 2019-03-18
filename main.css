@@ -7,6 +7,10 @@ body {
   font-family: "Century Gothic";
 }
 
+.thankyou {
+  width: 100%;
+}
+
 .logo {
   height: 50px;
 }
